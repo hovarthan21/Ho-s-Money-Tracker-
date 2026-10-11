@@ -1,0 +1,23 @@
+{
+  "name": "hos-money-tracker",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n api,web \"python api/index.py\" \"vite --host --open\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "postinstall": "python -m pip install -r requirements.txt || echo Python packages not installed. Run: pip install -r requirements.txt"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.8.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.0",
+    "concurrently": "^9.0.0"
+  }
+}

@@ -1,0 +1,5 @@
+node_modules
+dist
+ho.db
+.env
+__pycache__
